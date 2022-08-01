@@ -28,7 +28,7 @@
 
 ### -- Sobre
 
-#### Projeto criado para enviar email a partir do site, utilizando Vue e EmailJS.
+#### Projeto criado para enviar email a partir de um site, utilizando Vue e EmailJS.
 
 ### -- Tecnologias
 
