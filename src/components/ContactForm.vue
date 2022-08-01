@@ -11,7 +11,7 @@
                     class="form-control"
                     type="text" 
                     v-model="name"
-                    name="name"
+                    name="from_name"
                     placeholder="Your Name"
                 >
             </div>
@@ -22,7 +22,7 @@
                     class="form-control"
                     type="text" 
                     v-model="email"
-                    name="email"
+                    name="reply_to"
                     placeholder="Your Email"
                 >
             </div>
@@ -62,7 +62,7 @@ export default {
     methods: {
         sendMail(e) {
             try {
-                emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_SERVICE_ID', e.target, 'YOUR_SERVICE_ID', {
+                emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID', {
                     name: this.name,
                     email: this.email,
                     message: this.message
